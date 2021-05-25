@@ -5,6 +5,7 @@ Feature: Shopping Basket
     And I add 5 units of "Breaking Bad"
     When I check the content of my shopping basket
     Then it should contain the following information
+      | Key           | Value                                               |
       | Creation Date | '25/05/2021'                                        |
       | Items         | [['The Hobbit', 5.00, 2 ],['Breaking Bad',7.00, 5]] |
       | Total         | 45.00                                               |
